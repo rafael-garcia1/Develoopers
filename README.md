@@ -7,9 +7,9 @@ A empresa Develoopers ficará responsavel por implementar um sistema para cadast
 Os tipos de usuarios para o sistema são clientes da oficina e seus proprios funcionarios.
 # Tecnologias Utilizadas
 
-# linguagens De Marcação
+# Linguagem De Marcação
 HTML - Versão: 5.0
-# Linguagens de Script
+# Linguagem de Script
 PHP - Versão: 7.4.7
 # Servidor
 Apache - Versão: 2.4.43
