@@ -10,8 +10,8 @@ Os tipos de usuarios para o sistema são clientes da oficina e seus proprios fun
 # linguagens De Marcação
 HTML - Versão: 5.0
 # Linguagens de Script
-PHP - Versão: 
+PHP - Versão: 7.4.7
 # Servidor
-Apache - Versão:
+Apache - Versão: 2.4.43
 # Banco de Dados
-MySQL - Versão:
+MySQL - Versão: 8.0
