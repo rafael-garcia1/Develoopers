@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Adicionar veiculo</title>
+</head>
+
+<body style="background-color: #5B96B8;">
+    <h1 style="text-align: center;">Cadastro de veiculo</h1>
+    <br><br>
+    
+    <form action="..\controller\cadastrarVeiculo.php" method="POST" autocomplete="off">
+        Ano: <input type="number" name="cano" min="1970" max="2020" size="5" required> <br><br>
+        Placa: <input type="text" name="cplaca" placeholder="AAA0000" pattern="[A-Z]{3}[0-9]{4}" size="10" title="ABC1234" required> <br><br>
+        Modelo: <input type="text" name="cmodelo" size="27" maxlength="25" required> <br><br>
+        Marca: <input type="text" name="cmarca" size="27" maxlenght="25" required> <br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
