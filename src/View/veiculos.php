@@ -37,4 +37,5 @@
 
     <br><br><br>
     <button onclick="document.location='form-veiculos.html'">Cadastrar novo veiculo</button>
+    <button onclick="document.location='servicos.html'">Serviços</button>
 </body>

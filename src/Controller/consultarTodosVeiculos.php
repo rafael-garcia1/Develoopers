@@ -27,7 +27,11 @@ if ($resultado->num_rows > 0) {
              "<td>" . $linha['Modelo'] . "</td>" .
              "<td>" . $linha['Ano'] . "</td>" .
              "<td>" . $linha['Placa'] . "</td>" .
-             "<td> <img src='../View/Icons/edit-2-16.png'>
+             "<td> 
+                    <form action='..\View\EditForm-veiculos.php' method='POST'>
+                        <input type='hidden' name='_placa' value=" . $linha['Placa'] . ">
+                        <button type='submit'> <img src='../View/Icons/edit-2-16.png'> </button>
+                    </form>
                         
                     <form action='..\Controller\ExcluirVeiculo.php' method='POST'>
                         <input type='hidden' name='_placa' value=" . $linha['Placa'] . ">

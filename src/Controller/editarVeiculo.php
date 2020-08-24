@@ -3,13 +3,16 @@
 include_once '..\Persistence\Conexao.php';
 include_once '..\Persistence\VeiculoDAO.php';
 
-$placa = $_POST['_placa'];
+$ano = $_POST['cano'];
+$placa = $_POST['cplaca'];
+$modelo = $_POST['cmodelo'];
+$marca = $_POST['cmarca'];
 
 $conexao = new Conexao();
 $conexao = $conexao->getConexao();
 
 $veiculodao = new VeiculoDAO();
-$res = $veiculodao->excluirVeiculo($placa, $conexao);
+$veiculodao = $veiculodao->editarVeiculo($placa, $ano, $modelo, $marca, $conexao);
 
 echo "<html> <script> window.location='../View/Veiculos.php' </script> </html>";
 

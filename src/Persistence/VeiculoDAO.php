@@ -26,17 +26,15 @@ class VeiculoDAO {
         return $res;
     }
 
-    #NÃO FUNCIONA
     function consultarVeiculo($placa, $conn) {
-        $select = "SELECT * FROM veiculo WHERE Placa =" . $placa;
+        $select = "SELECT `Modelo`, `Marca`, `Ano` FROM `veiculo` WHERE `Placa`='" . $placa . "'";
         $res = $conn->query($select);
 
         return $res;
     }
 
-    #NEM CHEGA NESSA PARTE
     function excluirVeiculo($placa, $conn) {
-        $delete = "DELETE FROM veiculo WHERE Placa=" . $placa;
+        $delete = "DELETE FROM `veiculo` WHERE `Placa`='" . $placa . "'";
         $res = $conn->query($delete);
         
         if ($res == TRUE) {
@@ -45,6 +43,19 @@ class VeiculoDAO {
 
         else {
             echo "Erro na remocao do veículo: <br>".$conn->error;
+        }
+    }
+
+    function editarVeiculo($placa, $ano, $modelo, $marca, $conn) {
+        $update = "UPDATE `veiculo` SET `Modelo`='" . $modelo . "', `Marca`='" . $marca . "', `Ano`='" . $ano . "' WHERE `Placa`='" . $placa . "'";
+        $res = $conn->query($update);
+
+        if ($res == TRUE) {
+            echo "<html> <script> alert('Veiculo editado com sucesso!') </script> </html>";
+        }
+
+        else {
+            echo "Erro na edicao do veículo: <br>".$conn->error;
         }
     }
 }
