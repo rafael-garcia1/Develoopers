@@ -1,22 +1,30 @@
 <?php
 
+    //importando classes Conexão e VeiculoDAO
     include_once '..\Persistence\Conexao.php';
     include_once '..\Persistence\VeiculoDAO.php';
 
+    //criando nova conexão com bd
     $conexao = new Conexao();
     $conexao = $conexao->getConexao();
 
+    //recuperando placa do veiculo a ser editado
     $placa = $_POST['_placa'];
 
+    //instanciando DAO para realizar a consulta dos dados pre-cadastrados
+    //para servirem de value no form
     $veiculodao = new VeiculoDAO();
     $resultado = $veiculodao->consultarVeiculo($placa, $conexao);
 
+    //transformando o registro
     $registro = $resultado->fetch_assoc();
 
+    //atribuindo variaveis para melhor utilização
     $ano = $registro['Ano'];
     $marca = $registro['Marca'];
     $modelo = $registro['Modelo'];
 
+    //formulario em html (muito semelhante a "Form-veiculos.html")
     echo "<head>
             <title>Editar veiculo</title>
           </head>

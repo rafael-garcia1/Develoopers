@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Veiculos</title>
+    <title>Servicos</title>
 </head>
 
 <style>
@@ -31,11 +31,12 @@
 </style>
 
 <body style="background-color: #5B96B8;">
-    <h1>Veiculos</h1> <br><br>
+    <h1 style="text-align: center;">Servicos</h1> <br>
+    <h2>Orcamentos</h2><br><br>
 
-    <?php include("../Controller/consultarTodosVeiculos.php") ?>
+    <?php include("../Controller/consultarTodosOrcamentos.php") ?>
 
     <br><br><br>
-    <button onclick="document.location='form-veiculos.html'">Cadastrar novo veiculo</button>
-    <button onclick="document.location='servicos.php'">Serviços</button>
+    <button onclick="document.location='Form-orcamento.php'">Cadastrar novo orçamento</button>
+    <button onclick="document.location='veiculos.php'">Voltar</button>
 </body>
