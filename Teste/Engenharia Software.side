@@ -1,0 +1,1041 @@
+{
+  "id": "2a6ff206-5ca5-4502-8a1c-b0c0b4b70a67",
+  "version": "2.0",
+  "name": "Engenharia Software",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "91ca6627-a488-4b56-8433-7b2bcdd534e2",
+    "name": "EngSFT",
+    "commands": [{
+      "id": "9aa19a53-2633-4cf3-a279-a4490d4296da",
+      "comment": "-------------------Abertura, inspeção dos locais----------------",
+      "command": "open",
+      "target": "/src/View/Veiculos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f3bd5cc-e2cd-49be-b95d-7c90ec0e69f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1074x941",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3faf2702-b1c9-4a60-b03e-9b613a39027c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Veiculos')]", "xpath:innerText"]
+      ],
+      "value": "Veiculos"
+    }, {
+      "id": "e0bf2025-3ab2-48cc-b167-43e8f50a86e3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(7)",
+      "targets": [
+        ["css=button:nth-child(7)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='form-veiculos.html'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar novo veiculo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdc6ab25-a99f-4200-ba84-2dbe42071615",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(8)",
+      "targets": [
+        ["css=button:nth-child(8)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='servicos.php'\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Serviços')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d7b8791-73c3-4eef-ba61-1cdffdfb41b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(7)",
+      "targets": [
+        ["css=button:nth-child(7)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='form-veiculos.html'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar novo veiculo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a86c16fd-c62b-4ba9-abc4-4d53a5f04e2b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Cadastro de veiculo')]", "xpath:innerText"]
+      ],
+      "value": "Cadastro de veiculo"
+    }, {
+      "id": "4596d737-ec65-4227-822c-1c129ed15638",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:\\n\\nVoltar"
+    }, {
+      "id": "e6e9a613-3c92-412c-a416-2598c5a10210",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:\\n\\nVoltar"
+    }, {
+      "id": "a6c961d6-db4b-4141-a27b-d2d09607d99a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:\\n\\nVoltar"
+    }, {
+      "id": "2a94c04e-3d2a-4ac0-affd-b1a9db3d64f0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:\\n\\nVoltar"
+    }, {
+      "id": "8d6f217d-a8e5-4125-948c-8f08f69cf1c0",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=cano",
+      "targets": [
+        ["name=cano", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cano']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4034c61f-c921-467e-8ed8-1341c33b6afc",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=cplaca",
+      "targets": [
+        ["name=cplaca", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='cplaca']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "199f67e5-417f-44a5-aac5-277d6fc211c3",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=cmodelo",
+      "targets": [
+        ["name=cmodelo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='cmodelo']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7f56680-4df6-466e-a97b-70c7164cb89f",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=cmarca",
+      "targets": [
+        ["name=cmarca", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='cmarca']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52e14bff-cc21-42f1-95ca-78e47885afd7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@value='Registrar']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b4075b-651d-4197-b391-ad87999046d3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(14)",
+      "targets": [
+        ["css=input:nth-child(14)", "css:finder"],
+        ["xpath=//input[@value='Limpar']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35adb3ca-6ef9-44cc-a3cb-0f127cfe8e3b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='veiculos.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ff4c5d8-b40f-4a0e-aaf0-790f022a36ca",
+      "comment": "---------------------Inserção De Valores Na Tabela Veiculo----------------",
+      "command": "click",
+      "target": "name=cano",
+      "targets": [
+        ["name=cano", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cano']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69359968-3d20-4728-9c7f-0baefbd5f524",
+      "comment": "",
+      "command": "type",
+      "target": "name=cano",
+      "targets": [
+        ["name=cano", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cano']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1999"
+    }, {
+      "id": "970e7792-a8a2-4df8-ac3d-cf7f5e610f38",
+      "comment": "",
+      "command": "type",
+      "target": "name=cplaca",
+      "targets": [
+        ["name=cplaca", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='cplaca']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "AVC6666"
+    }, {
+      "id": "ea4dfada-005d-4785-99d1-92d3a0d5eb79",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=cplaca",
+      "targets": [
+        ["name=cplaca", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='cplaca']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0eb98c8f-92dd-4242-a3fd-f830a9572092",
+      "comment": "",
+      "command": "type",
+      "target": "name=cmodelo",
+      "targets": [
+        ["name=cmodelo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='cmodelo']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "x6"
+    }, {
+      "id": "e306b77f-1698-4a9e-98e5-4883bfd00f66",
+      "comment": "",
+      "command": "type",
+      "target": "name=cmarca",
+      "targets": [
+        ["name=cmarca", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='cmarca']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "tiberius"
+    }, {
+      "id": "4ff1bafd-a733-4c7b-a8cc-3f4fe6e737ba",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=cmarca",
+      "targets": [
+        ["name=cmarca", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='cmarca']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c4724c45-5adb-4506-a34a-025eef999d99",
+      "comment": "-------------Aba Veiculos Inspeção----------",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Veiculos')]", "xpath:innerText"]
+      ],
+      "value": "Veiculos"
+    }, {
+      "id": "949c8639-9e84-47ff-a218-6828b836e706",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=th:nth-child(1)",
+      "targets": [
+        ["css=th:nth-child(1)", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'Marca')]", "xpath:innerText"]
+      ],
+      "value": "Marca"
+    }, {
+      "id": "af5c7dfc-ab53-4b32-8d6b-d80efc36f919",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=th:nth-child(2)",
+      "targets": [
+        ["css=th:nth-child(2)", "css:finder"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Modelo')]", "xpath:innerText"]
+      ],
+      "value": "Modelo"
+    }, {
+      "id": "e196a1d5-059c-4315-8e1b-12627f738605",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=th:nth-child(3)",
+      "targets": [
+        ["css=th:nth-child(3)", "css:finder"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Ano')]", "xpath:innerText"]
+      ],
+      "value": "Ano"
+    }, {
+      "id": "a4db6151-c00a-426a-9d95-5e462019f0cb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=th:nth-child(4)",
+      "targets": [
+        ["css=th:nth-child(4)", "css:finder"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Placa')]", "xpath:innerText"]
+      ],
+      "value": "Placa"
+    }, {
+      "id": "eaff1653-b215-4140-8b3e-9df18b28f326",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=th:nth-child(5)",
+      "targets": [
+        ["css=th:nth-child(5)", "css:finder"],
+        ["xpath=//th[5]", "xpath:position"],
+        ["xpath=//th[contains(.,'Opcoes')]", "xpath:innerText"]
+      ],
+      "value": "Opcoes"
+    }, {
+      "id": "75a83911-6f7e-45ec-b235-d12364ea7bb9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(8)",
+      "targets": [
+        ["css=button:nth-child(8)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='form-veiculos.html'\"]", "xpath:attributes"],
+        ["xpath=//body/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar novo veiculo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91131a37-2254-4208-a7c8-db33cab2cd82",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(9)",
+      "targets": [
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='servicos.php'\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Serviços')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f758040-2297-417f-ac53-748bcd2479c1",
+      "comment": "-------EDITAR VEICULO---------",
+      "command": "click",
+      "target": "css=form:nth-child(1) img",
+      "targets": [
+        ["css=form:nth-child(1) img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "839798e0-eb50-4f70-8d76-7f2666693adb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Edicao de veiculo')]", "xpath:innerText"]
+      ],
+      "value": "Edicao de veiculo"
+    }, {
+      "id": "f1665a59-50b6-4a17-a3e9-c4c9ca9d199c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\EditarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:"
+    }, {
+      "id": "5c4feabd-02b6-401d-93f9-b9cdd26defe0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\EditarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:"
+    }, {
+      "id": "e5bf0699-51f0-43b0-be74-b289501dced0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\EditarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:"
+    }, {
+      "id": "b594dc5a-d520-43cb-ab62-c9d43c54adc7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\EditarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Ano:\\n\\nPlaca:\\n\\nModelo:\\n\\nMarca:"
+    }, {
+      "id": "cb471ebd-3c81-4db9-a8e1-94780ef42f90",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@value='Confirmar alteracao']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1586fc02-9eef-466f-b382-3c8e9c8fbf98",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "555c1754-dca0-42ed-b71c-976ee047ef6e",
+      "comment": "",
+      "command": "type",
+      "target": "name=cmodelo",
+      "targets": [
+        ["name=cmodelo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='cmodelo']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "X7"
+    }, {
+      "id": "bbb7a56e-2af8-4555-90c9-958921cca3ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=cmarca",
+      "targets": [
+        ["name=cmarca", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='cmarca']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef5782e4-6344-4e1a-a1b3-d3e300afd0a0",
+      "comment": "",
+      "command": "type",
+      "target": "name=cmarca",
+      "targets": [
+        ["name=cmarca", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='cmarca']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "TesteEdicao"
+    }, {
+      "id": "49be5bf4-7d33-46b8-af47-2c4bfe56deff",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\EditarVeiculo.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77b5952e-c28a-4395-a608-889939c97517",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@value='Confirmar alteracao']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a440a23-6ead-4889-b17b-c744c48fad4e",
+      "comment": "---------------Exclusao-----------------",
+      "command": "click",
+      "target": "css=form:nth-child(2) > button",
+      "targets": [
+        ["css=form:nth-child(2) > button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16fb89df-477a-4b96-859d-e76fd45ccd30",
+      "comment": "---------Cadastra novo veiculo----------",
+      "command": "click",
+      "target": "css=button:nth-child(7)",
+      "targets": [
+        ["css=button:nth-child(7)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='form-veiculos.html'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar novo veiculo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "853ab14b-192c-4000-b313-15caba1a0cf4",
+      "comment": "",
+      "command": "click",
+      "target": "name=cano",
+      "targets": [
+        ["name=cano", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cano']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3a73cb2-28d4-4166-adc0-50869ce179c5",
+      "comment": "",
+      "command": "type",
+      "target": "name=cano",
+      "targets": [
+        ["name=cano", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cano']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1999"
+    }, {
+      "id": "6d220c0c-1164-4240-bf89-2cef61dad7af",
+      "comment": "",
+      "command": "type",
+      "target": "name=cplaca",
+      "targets": [
+        ["name=cplaca", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='cplaca']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "ABC1234"
+    }, {
+      "id": "ca21c34a-1fe8-4b44-83a1-f401489c17cf",
+      "comment": "",
+      "command": "type",
+      "target": "name=cmodelo",
+      "targets": [
+        ["name=cmodelo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='cmodelo']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "teste1"
+    }, {
+      "id": "04d9f921-4538-4807-a9dc-8313cb64f35c",
+      "comment": "",
+      "command": "type",
+      "target": "name=cmarca",
+      "targets": [
+        ["name=cmarca", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='cmarca']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "teste1"
+    }, {
+      "id": "885a35b9-0601-4e01-a1fa-10199494c33f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c4dd0d-7094-4d29-929d-64b9eb4d3ab1",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@value='Registrar']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85f463b4-90d3-4869-915f-83d765f1f71a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(9)",
+      "targets": [
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='servicos.php'\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Serviços')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8e3695a-6a32-4d17-a51c-0a0e0abdda19",
+      "comment": "-----------ABA SERVIÇO--------------",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(9)",
+      "targets": [
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='servicos.php'\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Serviços')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53fddfe3-993c-4d57-a7dd-3def59c169c1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Servicos')]", "xpath:innerText"]
+      ],
+      "value": "Servicos"
+    }, {
+      "id": "08daf578-bb11-4d97-8bfd-3568e04de154",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Orcamentos')]", "xpath:innerText"]
+      ],
+      "value": "Orcamentos"
+    }, {
+      "id": "a507ad89-5c7d-4d80-ba5b-0312a380db57",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(9)",
+      "targets": [
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='Form-orcamento.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar novo orçamento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "312dc831-3792-4403-a77a-472d9cd52abf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(10)",
+      "targets": [
+        ["css=button:nth-child(10)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='veiculos.php'\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5140f872-e792-4414-9cb9-b4b6068e81de",
+      "comment": "------------------Cadastrar Orçamento--------------",
+      "command": "click",
+      "target": "css=button:nth-child(9)",
+      "targets": [
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='Form-orcamento.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar novo orçamento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5da26aee-fc9b-4977-8cca-2ed4b9d65689",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Cadastro de novo orcamento')]", "xpath:innerText"]
+      ],
+      "value": "Cadastro de novo orcamento"
+    }, {
+      "id": "8189577b-cc5b-4b92-bdd6-7ff0407231c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarOrcamento.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Veiculo:\\nteste1 teste1\\n\\n\\nDescricao:\\n\\n\\n\\n\\nVoltar"
+    }, {
+      "id": "fc0c0d72-eddb-4c6c-b108-4d008bd089e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarOrcamento.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "Veiculo:\\nteste1 teste1\\n\\n\\nDescricao:\\n\\n\\n\\n\\nVoltar"
+    }, {
+      "id": "c33db64e-56af-4622-b629-4ae6527da198",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=cplaca",
+      "targets": [
+        ["name=cplaca", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='cplaca']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'teste1 teste1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d4b5f9a-420e-43cc-9bd8-f8b60d6094e3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Registrar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "846f4649-fd8b-4b04-a68f-50dd4111c985",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(11)",
+      "targets": [
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@value='Limpar']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4302354a-c574-4134-8b8b-83fae1bbfa0b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='servicos.php'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8d4baf7-64b2-4ac0-affd-26aa43d06634",
+      "comment": "",
+      "command": "click",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd1d48b-1fa0-4d9b-839c-efad777371c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarOrcamento.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2eda502-71f0-446a-a96e-67913a94354d",
+      "comment": "--------------Editar Descricao------------------",
+      "command": "type",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Trocar Cambio do Fiat Palio 2010, 1.0, flex"
+    }, {
+      "id": "548f5a12-b618-48b8-a1f0-160ca98ef266",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarOrcamento.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f8d9b78-854f-44c4-9d2b-6ceadc16bea9",
+      "comment": "",
+      "command": "click",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f7cd58b-f55e-48ac-8afa-a7ddc9994b4e",
+      "comment": "",
+      "command": "click",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b839c21a-5a31-485e-86a8-321a48b8a654",
+      "comment": "----Limpa Descrição --- ",
+      "command": "click",
+      "target": "css=input:nth-child(11)",
+      "targets": [
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@value='Limpar']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "581a979d-450d-48e3-b95e-dd6afc6d43fd",
+      "comment": "",
+      "command": "type",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Trocar Cambio do Fiat Palio 2010, 1.0, flex"
+    }, {
+      "id": "861d0c7b-6e03-4c0c-8fb7-3d108a314a3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='..\\controller\\cadastrarOrcamento.php']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7632140e-61ee-4f9b-9b0e-7cf7d5acba8f",
+      "comment": "------Registrar-----",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Registrar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c20604ef-6640-4448-a410-5dccf5d1cf23",
+      "comment": "-----------EDITAR ORCAMEMTO-----------",
+      "command": "click",
+      "target": "css=form:nth-child(1) img",
+      "targets": [
+        ["css=form:nth-child(1) img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3afcdbb2-8c3f-46c2-abfa-c379203f7cd9",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "330.00471687316895,20.339614868164062"
+    }, {
+      "id": "6e9ca609-d965-4073-ae7d-8dafe9b1165b",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "330.00471687316895,20.339614868164062"
+    }, {
+      "id": "c98bf70e-2940-4133-b54e-f4e869ee4e10",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "330.00471687316895,20.339614868164062"
+    }, {
+      "id": "855c039c-96c7-423d-8299-c1d08d8abc02",
+      "comment": "",
+      "command": "click",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "800524c6-f1f3-451a-b615-5bf8bf5030e2",
+      "comment": "",
+      "command": "type",
+      "target": "name=cdescricao",
+      "targets": [
+        ["name=cdescricao", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='cdescricao']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Trocar Cambio do Fiat Palio 2010, 1.0, flex\\nEditar1.0"
+    }, {
+      "id": "f507e6da-14a0-4f47-a430-df4c92c52782",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Confirmar']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e13d2c0-c6ad-4a8a-be7c-9dfcc1e335d3",
+      "comment": "-------------EXCLUIR ORÇAMENTO------------",
+      "command": "click",
+      "target": "css=form:nth-child(2) img",
+      "targets": [
+        ["css=form:nth-child(2) img", "css:finder"],
+        ["xpath=//form[2]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "510c8d3d-8a05-4ed9-9185-29c0f04c2c20",
+      "comment": "-----------VOLTAR ABA VEICULO------------------------",
+      "command": "click",
+      "target": "css=button:nth-child(10)",
+      "targets": [
+        ["css=button:nth-child(10)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.location='veiculos.php'\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c68e7bd5-4448-4184-b142-515a70ada6e4",
+      "comment": "------EXCLUIR VEICULO ------",
+      "command": "click",
+      "target": "css=form:nth-child(2) img",
+      "targets": [
+        ["css=form:nth-child(2) img", "css:finder"],
+        ["xpath=//form[2]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91071d3c-ef62-4107-820a-55bcd7c7f7eb",
+      "comment": "-------FIM DO TESTE----------------",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "630e2026-3a78-4d38-bba4-c9e708df281f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["91ca6627-a488-4b56-8433-7b2bcdd534e2"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
